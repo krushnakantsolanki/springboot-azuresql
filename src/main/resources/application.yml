@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://springserver1:1433;database=springazuretest;user=demoadmin@springserver1;password=admin@123;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*:database:windows:net;loginTimeout=30;
+    username: demoadmin
+    password: admin@123
+  jpa:
+    show-sql: true
+    properties:
+    hibernate.ddl-auto: update
+    hibernate:
+      dialect : org.hibernate.dialect.SQLServer2012Dialect
+
+server:
+  port: 9191
+
+#    url: jdbc:sqlserver://springserver1:database:windows:net:1433;database=springazuretest;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*:database:windows:net;loginTimeout=30;
+
+#    url: jdbc:sqlserver://javatechie.database.windows.net:1433;database=javatechiedb;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+#    username: javatechie
+#    password: password@123
+
