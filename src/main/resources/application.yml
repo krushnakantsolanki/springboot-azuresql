@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:sqlserver://springserver1:1433;database=springazuretest;user=demoadmin@springserver1;password=admin@123;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*:database:windows:net;loginTimeout=30;
+    url: jdbc:sqlserver://springserver1:database:windows:net:1433;database=springazuretest;user=demoadmin@springserver1;password=admin@123;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*:database:windows:net;loginTimeout=30;
     username: demoadmin
     password: admin@123
   jpa:
